@@ -13,6 +13,7 @@ for x in range(5):
     grades.append(temporary)
     names.append(name)
 dictin={names[i]:grades[i] for i in range(len(names))}
+dic_ave=dictin.copy()
 for i in range(len(grades)):
     add=0
     ave=0
@@ -20,11 +21,12 @@ for i in range(len(grades)):
         add+=t
     ave=add/3
     averages.append(ave)
+    dic_ave={ave:names[i] for i in range(len(names))}
 averages.sort()
 averages.reverse()
-print('Congratilation 'dictin.keys(
 print(dictin)
 print(averages)
+print('congratilation',dic_ave.get(averages[0]),'you are the one')
 
 
 

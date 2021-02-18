@@ -13,7 +13,6 @@ for x in range(5):
     grades.append(temporary)
     names.append(name)
 dictin={names[i]:grades[i] for i in range(len(names))}
-dic_ave=dictin.copy()
 for i in range(len(grades)):
     add=0
     ave=0
